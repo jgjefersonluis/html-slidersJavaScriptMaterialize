@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feature discovery</title>
+    <!-- fonts Icons googleapis -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <a class="btn" onclick="$('.tap-target').tapTarget('open')">Clique para abrir</a>
+      <a class="btn" onclick="$('.tap-target').tapTarget('close')">Clique para fechar</a>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a id="edit" class="btn-floating btn-large red">
+        <i class="material-icons large">mode_edit</i>
+      </a>
+    </div>
+    <div class="tap-target" data-target="edit">
+      <div class="tap-target-content">
+        <h5>Ajuda</h5>
+        <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.tap-target').tapTarget();
+    });
+
+    </script>
+  </body>
+
+</html>
